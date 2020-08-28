@@ -1,0 +1,57 @@
+$small: 425px;
+$medium: 768px;
+
+.banner {
+	background-image: url('../../assets/images/starwars-img.jpg');
+	background-size: cover;
+	background-position: center;
+	color: white;
+	height: 40vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-bottom: 4em;
+}
+
+.content {
+	width: 42%;
+	@media screen and (max-width: $small) {
+    width: 100%;
+	}
+	
+	& > h3 {
+		font-weight: normal;
+	}
+	
+	& > h1 {
+		font-weight: 300;
+	}
+}
+
+.profile-section {
+	background-image: url('../../assets/images/jake-weirick-unsplash.jpg');
+	background-size: cover;
+	background-position: center;
+	min-height: 60vh;
+	& > h2 {
+	text-align: center;
+	font-weight: 400;
+	letter-spacing: .1em;
+	margin: .3em;
+	}
+}
+
+.profiles {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+input {
+	height: 1.7em;
+	border-color: #47e4c2;
+	border-radius: 20px;
+	margin-right: 1em;
+	outline: none;
+}
